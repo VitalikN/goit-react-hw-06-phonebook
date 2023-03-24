@@ -16,12 +16,10 @@ export const ContactList = () => {
     : contacts;
 
   return (
-    <div>
-      <List>
-        {filteredItems.map(contact => (
-          <ContactListItem key={contact.id} contact={contact} />
-        ))}
-      </List>
-    </div>
+    <List>
+      {filteredItems.map(contact => (
+        <ContactListItem key={contact.id} contact={contact} />
+      ))}
+    </List>
   );
 };
